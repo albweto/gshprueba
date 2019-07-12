@@ -1,0 +1,27 @@
+<p-table [value]="person" [paginator]="true" [rows]="10">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>name</th>
+                <th>height</th>
+                <th>mass</th>
+                <th>hair_color</th>
+                <th>skin_color</th>
+                <th>eye_color</th>
+                <th>birth_year</th>
+                <th>gender</th>
+                
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-car>
+            <tr>
+                <td>{{car.name}}</td>
+                <td>{{car.height}}</td>
+                <td>{{car.mass}}</td>
+                <td>{{car.hair_color}}</td>
+                <td>{{car.skin_color}}</td>
+                <td>{{car.eye_color}}</td>
+                <td>{{car.birth_year}}</td>
+                <td>{{car.gender}}</td>
+            </tr>
+        </ng-template>
+    </p-table>

@@ -1,0 +1,33 @@
+<p-table [value]="cars" >
+        <ng-template pTemplate="header">
+            <tr>
+                <th>name</th>
+                <th>model</th>
+                <th>manufacturer</th>
+                <th>cost_in_credits</th>
+                <th>length</th>
+                <th>max_atmosphering_speed</th>
+                <th>crew</th>
+                <th>passengers</th>
+                <th>cargo_capacity</th>
+                <th>consumables</th>
+                <th>vehicle_class</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" car>
+            <tr>
+                <td>{{car.name}}</td>
+                <td>{{car.model}}</td>
+                <td>{{car.manufacturer}}</td>
+                <td>{{car.cost_in_credits}}</td>
+                <td>{{car.length}}</td>
+                <td>{{car.max_atmosphering_speed}}</td>
+                <td>{{car.crew}}</td>
+                <td>{{car.passengers}}</td>
+                <td>{{car.cargo_capacity}}</td>
+                <td>{{car.consumables}}</td>
+                <td>{{car.vehicle_class}}</td>
+
+            </tr>
+        </ng-template>
+    </p-table>
